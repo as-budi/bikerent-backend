@@ -1,7 +1,15 @@
 GET http://localhost:3001/user
 
 ###
-GET http://localhost:3001/allUsers
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+     "name": "Tono",
+     "email": "tono@gmail.com",
+     "password": "123456",
+     "confPassword": "123456"
+}
 
 ###
 GET http://localhost:3001/userByEmail/tonosantoso@gmail.com

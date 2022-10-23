@@ -1,4 +1,4 @@
--- Active: 1666075174778@@127.0.0.1@3306@bike_rent_db
+-- Active: 1661842809560@@127.0.0.1@3306@bike_rent_db
 
 CREATE DATABASE bike_rent_db;
 
@@ -13,20 +13,24 @@ CREATE TABLE user (
      password VARCHAR(40),
      refresh_token VARCHAR(255),
      balance INT,
-     created_at DATETIME,
-     updated_at DATETIME
+     createdAt DATETIME,
+     updatedAt DATETIME
 );
 
 CREATE TABLE transaction (
      id INT PRIMARY KEY AUTO_INCREMENT,
      type INT,
      amount INT,
-     created_at DATETIME
+     createdAt DATETIME,
+     updatedAt DATETIME
 );
 
 CREATE TABLE parking_lot (
      id INT PRIMARY KEY AUTO_INCREMENT,
-     status BOOLEAN
+     location INT,
+     status BOOLEAN,
+     createdAt DATETIME,
+     updatedAt DATETIME
 );
 
 CREATE TABLE deposit (
@@ -40,6 +44,8 @@ CREATE TABLE deposit (
 CREATE TABLE bike (
      id INT PRIMARY KEY AUTO_INCREMENT,
      parking_lot_id INT,
+     createdAt DATETIME,
+     updatedAt DATETIME,
      FOREIGN KEY(parking_lot_id) REFERENCES parking_lot(id) ON DELETE CASCADE
 );
 
@@ -47,8 +53,9 @@ CREATE TABLE lot_history (
      id INT PRIMARY KEY AUTO_INCREMENT,
      lot_id INT,
      status BOOLEAN,
-     time DATETIME,
      user_id INT,
+     createdAt DATETIME,
+     updatedAt DATETIME,
      FOREIGN KEY(lot_id) REFERENCES parking_lot(id) ON DELETE CASCADE,
      FOREIGN KEY(user_id) REFERENCES user(id) ON DELETE CASCADE
 );

@@ -11,6 +11,7 @@ try {
      console.log(error);
 }
 
+app.use(express.json());
 app.use(router);
 
 app.listen(3001, () => console.log("Server running at port 3001"));
