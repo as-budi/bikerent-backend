@@ -23,3 +23,7 @@ Content-Type: application/json
      "email": "tono@gmail.com",
      "password": "123456"
 }
+
+
+###
+DELETE http://localhost:3001/logout
