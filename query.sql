@@ -1,4 +1,6 @@
--- Active: 1661842809560@@127.0.0.1@3306@bike_rent_db
+-- Active: 1660753862719@@127.0.0.1@3306@bike_rent_db
+
+ALTER TABLE user MODIFY COLUMN password varchar(255);
 
 CREATE DATABASE bike_rent_db;
 

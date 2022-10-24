@@ -1,5 +1,5 @@
 GET http://localhost:3001/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJUb25vIiwiZW1haWwiOiJ0b25vQGdtYWlsLmNvbSIsImlhdCI6MTY2NjUwNTAwNSwiZXhwIjoxNjY2NTA1MDIwfQ.086Pv5p_6c4ehg3CawVF-GFeIaSEnnph9aeMwBfc57g
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJCdWRpIiwiZW1haWwiOiJidWRpQGdtYWlsLmNvbSIsImlhdCI6MTY2NjYxNTQyNSwiZXhwIjoxNjY2NjE1NDQwfQ.OyGmBjLV-pvRZWHjEoCsmkYuEntv908GaYSzuSZ_Oec
 
 ###
 GET http://localhost:3001/refresh_token
@@ -20,7 +20,7 @@ POST http://localhost:3001/login
 Content-Type: application/json
 
 {
-     "email": "tono@gmail.com",
+     "email": "budi@gmail.com",
      "password": "123456"
 }
 
