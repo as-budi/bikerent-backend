@@ -10,7 +10,7 @@ CREATE TABLE user (
      id INT PRIMARY KEY AUTO_INCREMENT,
      user_name VARCHAR(40),
      user_email VARCHAR(40),
-     password VARCHAR(40),
+     password VARCHAR(255),
      refresh_token VARCHAR(255),
      balance INT,
      createdAt DATETIME,
