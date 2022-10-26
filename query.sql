@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 -- Active: 1666075174778@@127.0.0.1@3306@bike_rent_db
+=======
+-- Active: 1660753862719@@127.0.0.1@3306@bike_rent_db
+
+ALTER TABLE user MODIFY COLUMN password varchar(255);
+>>>>>>> b9c5050c2ac8ad7abbc0e70e570dc05f6477b49e
 
 CREATE DATABASE bike_rent_db;
 
@@ -10,7 +16,7 @@ CREATE TABLE user (
      id INT PRIMARY KEY AUTO_INCREMENT,
      user_name VARCHAR(40),
      user_email VARCHAR(40),
-     password VARCHAR(40),
+     password VARCHAR(255),
      refresh_token VARCHAR(255),
      balance INT,
      createdAt DATETIME,
